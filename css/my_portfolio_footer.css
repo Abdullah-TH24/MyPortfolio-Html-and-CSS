@@ -25,7 +25,7 @@ footer .container .row-two {
 @media (max-width: 480px) {
   footer .container .row-one,
   footer .container .row-two {
-    gap: 25px !important;
+    gap: 15px !important;
   }
 }
 
