@@ -33,6 +33,12 @@
   margin-left: 50px;
 }
 
+@media (max-width: 450px) {
+  .home .container .left-side {
+    margin: 0;
+  }
+}
+
 .home .container .left-side img {
   position: absolute;
   left: -90px;
