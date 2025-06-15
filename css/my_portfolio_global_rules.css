@@ -1,0 +1,87 @@
+/* Start Global Variables */
+:root {
+  --primary-color: #00adb5;
+  --secondry-color: #393e46;
+  --third-color: #eeeeee;
+  --background-color: #222831;
+  --transition-delay: 0.3s;
+}
+/* End Global Variables */
+/* Start Font <Poppins and Oswald> */
+@font-face {
+  font-family: "OswaldBold";
+  src: url("../fonts/Oswald-Bold.ttf");
+}
+
+@font-face {
+  font-family: "PoppinsRegular";
+  src: url("../fonts/Poppins-Regular.ttf");
+}
+
+@font-face {
+  font-family: "PoppinsBold";
+  src: url("../fonts/Poppins-Bold.ttf");
+}
+/* End Font <Poppins> */
+
+/* Start Glabal Rules */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+*::selection {
+  background-color: #393e46;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #222831;
+  font-family: "PoppinsRegular";
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Mobile */
+@media (maz-width: 767px) {
+}
+
+/* Small Screens */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+/* Medium Screens */
+@media (min-width: 990px) {
+  .container {
+    width: 960px;
+  }
+}
+
+/* Large Screens */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+/* End Glabal Rules */

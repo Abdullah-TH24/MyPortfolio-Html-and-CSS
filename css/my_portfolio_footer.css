@@ -1,0 +1,83 @@
+footer {
+  height: 45vh;
+}
+
+footer::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background-color: #393e46;
+}
+
+footer .container {
+  padding-top: 100px;
+}
+
+footer .container .row-one,
+footer .container .row-two {
+  display: flex;
+  justify-content: center;
+  gap: 85px;
+}
+
+@media (max-width: 480px) {
+  footer .container .row-one,
+  footer .container .row-two {
+    gap: 35px !important;
+  }
+}
+
+footer .container .row-two {
+  gap: 35px;
+}
+
+@media (max-width: 480px) {
+  footer .container .row-two {
+    gap: 15px !important;
+  }
+}
+
+footer .container .row-one .box a {
+  padding-left: 5px;
+}
+
+footer .container .row-one .box i,
+footer .container .row-one .box a {
+  color: var(--third-color);
+  transition: var(--transition-delay);
+}
+
+footer .container .row-one .box a:hover {
+  color: var(--primary-color);
+}
+
+footer .container .row-two {
+  margin-top: 50px;
+}
+
+footer .container .row-two a {
+  color: var(--third-color);
+  padding: 15px;
+  background-color: #393e46ab;
+  border-radius: 50%;
+  transition: var(--transition-delay);
+}
+
+footer .container .row-two a:hover {
+  background-color: var(--primary-color);
+  box-shadow: 0 0 20px var(--primary-color), 0 0 40px var(--primary-color);
+}
+
+footer .container .row-three {
+  margin: 50px 0 0 0;
+  text-align: end;
+  color: var(--third-color);
+}
+
+@media (max-width: 480px) {
+  footer .container .row-three {
+    text-align: center;
+  }
+}

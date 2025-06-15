@@ -1,0 +1,63 @@
+.works {
+  margin-top: 100px;
+  min-height: 100vh;
+  background-image: url(../images/works/doodle\ items.png);
+  background-repeat: repeat;
+}
+
+.works .container {
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+
+.works .container .row-one {
+  display: flex;
+  margin-bottom: 25px;
+}
+
+@media (max-width: 990px) {
+  .works .container .row-one {
+    justify-content: center;
+  }
+}
+
+.works .container .row-one a {
+  padding: 10px;
+  background-color: #393e46ab;
+}
+
+@media (min-width: 767px) {
+  .works .container .row-one a {
+    padding: 10px 15px;
+  }
+}
+
+.works .container .row-one a.active {
+  background-color: var(--primary-color);
+}
+
+.works .container .row-one a:hover {
+  animation: none;
+  background-color: var(--primary-color);
+  box-shadow: 0 0 20px var(--primary-color), 0 0 40px var(--primary-color);
+}
+
+@media (max-width: 1200px) {
+  .works .container .row-two {
+    flex-wrap: wrap;
+    gap: 25px;
+  }
+}
+
+@media (max-width: 990px) {
+  .works .container .row-two {
+    justify-content: center;
+  }
+}
+
+.works .container .row-two .box {
+  padding: 15px;
+  width: 368px;
+  height: 200px;
+  background-color: #393e46ab;
+}

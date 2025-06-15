@@ -1,0 +1,148 @@
+.contact {
+  margin-top: 150px;
+  min-height: 100vh;
+}
+
+@media (max-width: 990px) {
+  .contact {
+    margin-bottom: 100px;
+  }
+}
+
+.contact .container {
+  flex-direction: column;
+}
+
+@media (min-width: 990px) {
+  .contact .container {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}
+
+.contact .container .left-side img:first-of-type {
+  position: static;
+  margin: 0 100px 0 100px;
+  width: 200px;
+}
+
+@media (min-width: 990px) {
+  .contact .container .left-side img:first-of-type {
+    position: absolute;
+    right: 0;
+    top: 33vh;
+    margin: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .contact .container .left-side img:first-of-type {
+    top: 22vh;
+    width: 250px;
+  }
+}
+
+.contact .container .left-side img:last-of-type {
+  left: 22%;
+  width: 150px;
+  z-index: -1;
+  top: 61vh;
+}
+
+@media (max-width: 450px) {
+  .contact .container .left-side img:last-of-type {
+    top: 45vh;
+  }
+}
+
+@media (min-width: 767px) {
+  .contact .container .left-side img:last-of-type {
+    top: 64vh;
+    left: 20%;
+  }
+}
+
+@media (min-width: 990px) {
+  .contact .container .left-side img:last-of-type {
+    right: 75px;
+    top: 72vh;
+    left: 56%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .contact .container .left-side img:last-of-type {
+    top: 70vh;
+    left: 48%;
+    width: 180px;
+  }
+}
+
+.contact .container .right-side {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+}
+
+@media (max-width: 990px) {
+  .contact .container .right-side {
+    width: 75%;
+  }
+}
+
+@media (max-width: 767px) {
+  .contact .container .right-side .row {
+    flex-direction: column;
+  }
+}
+
+.contact .container .right-side .row .first,
+.contact .container .right-side .row .second {
+  display: block;
+}
+
+.contact .container .right-side label {
+  color: var(--third-color);
+  line-height: 2;
+}
+
+.contact .container .right-side textarea {
+  height: 45vh;
+}
+
+.contact .container .right-side .row input,
+.contact .container .right-side textarea {
+  outline: none;
+  border: none;
+  padding: 15px;
+  width: 100%;
+  caret-color: var(--primary-color);
+}
+
+.contact .container .right-side textarea {
+  resize: none;
+}
+
+.contact .container .right-side .row input:focus,
+.contact .container .right-side textarea:focus {
+  box-shadow: 0 0 15px var(--primary-color), 0 0 30px var(--primary-color);
+}
+
+.contact .container .right-side .button a {
+  padding: 10px 75px 10px 25px;
+  background-color: var(--primary-color);
+  color: var(--third-color);
+  border-radius: 25px;
+  transition: var(--transition-delay);
+}
+
+.contact .container .right-side .button a:hover {
+  box-shadow: 0 0 20px var(--primary-color), 0 0 40px var(--primary-color);
+}
+
+.contact .container .right-side .button i {
+  font-size: 25px;
+  right: 20px;
+  bottom: 7.5px;
+  z-index: 2;
+}

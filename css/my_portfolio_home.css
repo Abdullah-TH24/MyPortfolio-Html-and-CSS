@@ -1,0 +1,141 @@
+.home {
+  padding-top: 140px;
+}
+
+@media (min-width: 767px) {
+  .home {
+    padding-top: 200px;
+  }
+}
+
+@media (min-width: 990px) {
+  .home {
+    padding-top: 100px;
+  }
+}
+
+.home .container {
+  height: calc(100vh - 100px);
+}
+
+@media (max-width: 990px) {
+  .home .container {
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+  }
+}
+
+.home .container .left-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  margin-left: 50px;
+}
+
+.home .container .left-side img {
+  position: absolute;
+  left: -90px;
+  top: 30px;
+}
+
+@media (max-width: 1200px) {
+  .home .container .left-side img {
+    width: 50px;
+    left: -60px;
+    top: 75px;
+  }
+}
+
+@media (max-width: 767px) {
+  .home .container .left-side img {
+    top: 5px;
+  }
+}
+
+.home .container .left-side h1 {
+  font-family: "PoppinsBold";
+  font-size: 96px;
+  color: var(--third-color);
+  text-transform: uppercase;
+  margin: -50px 0 50px 0;
+}
+
+@media (max-width: 1200px) {
+  .home .container .left-side h1 {
+    font-size: 80px;
+  }
+}
+
+@media (max-width: 767px) {
+  .home .container .left-side h1 {
+    font-size: 50px;
+  }
+}
+
+.home .container .left-side h1 span {
+  color: var(--primary-color);
+}
+
+.home .container .left-side a {
+  display: inline-block;
+}
+
+.home .container .left-side a:first-of-type {
+  padding: 7.5px 17.5px;
+  background-color: var(--primary-color);
+}
+
+.home .container .left-side a:first-of-type:hover {
+  box-shadow: 0 0 20px var(--primary-color), 0 0 40px var(--primary-color);
+}
+
+.home .container .left-side a:last-of-type {
+  margin-left: 15px;
+  padding: 7.5px 17.5px;
+}
+
+.home .container .left-side a:last-of-type:hover {
+  background-color: var(--primary-color);
+  box-shadow: 0 0 20px var(--primary-color), 0 0 40px var(--primary-color);
+}
+
+.home .container .right-side img.mixed,
+.home .container .right-side img.group,
+.home .container .right-side img.shadow {
+  width: 350px;
+}
+
+@media (max-width: 767px) {
+  .home .container .right-side img.mixed,
+  .home .container .right-side img.group,
+  .home .container .right-side img.shadow {
+    width: 250px;
+  }
+}
+
+.home .container .right-side img.group {
+  top: 125px;
+  right: 75px;
+  z-index: 2;
+}
+
+@media (max-width: 767px) {
+  .home .container .right-side img.group {
+    right: 0;
+  }
+}
+
+.home .container .right-side img.shadow {
+  right: 0;
+  top: 440px;
+  right: 125px;
+  z-index: 1;
+}
+
+@media (max-width: 767px) {
+  .home .container .right-side img.shadow {
+    top: 350px;
+    right: 30px;
+  }
+}

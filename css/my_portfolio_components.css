@@ -1,0 +1,74 @@
+.container h2 {
+  font-family: "PoppinsBold";
+  font-size: 50px;
+  text-align: center;
+  color: var(--third-color);
+  line-height: 1.5;
+}
+
+.container h2 span {
+  color: var(--primary-color);
+}
+
+@media (min-width: 767px) {
+  .container h2 {
+    font-size: 58px;
+  }
+}
+
+@media (min-width: 990px) {
+  .container h2 {
+    text-align: start;
+    font-size: 64px;
+  }
+}
+
+.flex-jCenter-aCenter {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+
+.flex-jBetween-aCenter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-jBetween {
+  display: flex;
+  justify-content: space-between;
+}
+
+.color-primary-transition-300ms {
+  color: var(--third-color);
+  transition: var(--transition-delay);
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.border-radius-25px {
+  border-radius: 25px;
+}
+
+.background-color-393e46 {
+  background-color: #393e46;
+}
+
+.position-relative {
+  position: relative;
+}
+
+.position-absolute {
+  position: absolute;
+}
+
+.gap-25px {
+  gap: 25px;
+}
+
+.gap-50px {
+  gap: 50px;
+}

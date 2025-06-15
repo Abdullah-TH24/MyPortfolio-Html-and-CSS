@@ -1,0 +1,97 @@
+.about {
+  padding-top: 150px;
+  padding-bottom: 100px;
+}
+
+.about::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: #393e46;
+  bottom: 0px;
+}
+
+@media (max-width: 990px) {
+  .about .container {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.about .container .left-side {
+  width: 35%;
+}
+
+@media (max-width: 990px) {
+  .about .container .left-side {
+    text-align: center;
+    width: 100%;
+  }
+}
+
+.about .container .left-side p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--third-color);
+}
+
+@media (max-width: 767px) {
+  .about .container .left-side p {
+    margin: 0 25px;
+  }
+}
+
+.about .container .left-side p span {
+  font-family: "PoppinsBold";
+  text-decoration: underline;
+}
+
+.about .container .right-side {
+  width: 60%;
+  text-align: end;
+}
+
+@media (max-width: 1200px) {
+  .about .container .right-side img.draws {
+    width: 580px;
+  }
+}
+
+@media (max-width: 767px) {
+  .about .container .right-side img.draws {
+    width: 300px !important;
+  }
+}
+
+@media (max-width: 990px) {
+  .about .container .right-side {
+    text-align: center;
+    width: 100%;
+  }
+}
+
+.about .container .right-side img.group {
+  right: 25%;
+  bottom: -50px;
+  z-index: 2;
+}
+
+@media (max-width: 767px) {
+  .about .container .right-side img.group {
+    width: 250px;
+  }
+}
+
+.about .container .right-side img.shadow {
+  right: 30%;
+  bottom: -60px;
+  z-index: 1;
+}
+
+@media (max-width: 767px) {
+  .about .container .right-side img.shadow {
+    bottom: -55px;
+    width: 200px;
+  }
+}
