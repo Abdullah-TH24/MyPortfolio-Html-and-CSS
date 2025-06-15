@@ -53,6 +53,12 @@
   }
 }
 
+@media (max-width: 450px) {
+  .home .container .left-side img {
+    display: none;
+  }
+}
+
 .home .container .left-side h1 {
   font-family: "PoppinsBold";
   font-size: 96px;
@@ -73,8 +79,23 @@
   }
 }
 
+@media (max-width: 450px) {
+  .home .container .left-side h1 {
+    font-size: 35px;
+  }
+}
+
 .home .container .left-side h1 span {
   color: var(--primary-color);
+}
+
+@media (max-width: 450px) {
+  .home .container .left-side .row {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
 }
 
 .home .container .left-side a {
