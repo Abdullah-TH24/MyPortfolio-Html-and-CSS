@@ -37,6 +37,10 @@
   .home .container .left-side {
     margin: 0;
   }
+
+  .home .container .left-side h1 {
+    text-align: center;
+  }
 }
 
 .home .container .left-side img {
