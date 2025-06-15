@@ -20,6 +20,10 @@
   }
 }
 
+.contact .container .left-side h2 {
+  font-size: 35px;
+}
+
 .contact .container .left-side img:first-of-type {
   position: static;
   margin: 0 100px 0 100px;
