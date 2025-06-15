@@ -41,7 +41,14 @@ header .container .logo {
 
 header .container .links {
   display: flex;
-  padding: 0; 
+  padding: 0;
+  gap: 5px;
+}
+
+@media (min-width: 767px) {
+  header .container .links {
+    gap: 25px;
+  }
 }
 
 header .container .links li {
@@ -50,8 +57,15 @@ header .container .links li {
 }
 
 header .container .links li a {
+  font-size: 12px;
   padding: 10px 5px;
   display: inline-block;
+}
+
+@media (min-width: 450px) {
+  header .container .links li a {
+    font-size: 15px;
+  }
 }
 
 header .container .links li a:hover {
@@ -65,7 +79,7 @@ header .container .links li a::after {
   position: absolute;
   left: 0;
   top: 0;
-  border-bottom: 2px solid var(--primary-color);
+  border-top: 2px solid var(--primary-color);
   border-radius: 15px;
   transform: scale(0) translateY(50px);
   opacity: 0;
