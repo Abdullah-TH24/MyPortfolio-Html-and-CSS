@@ -3,6 +3,7 @@
   min-height: 100vh;
   background-image: url(../images/works/doodle\ items.png);
   background-repeat: repeat;
+  width: 100%;
 }
 
 .works .container {
@@ -13,6 +14,14 @@
 .works .container .row-one {
   display: flex;
   margin-bottom: 25px;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width: 767px) {
+  .works .container .row-one {
+    flex-direction: row;
+  }
 }
 
 @media (max-width: 990px) {
@@ -57,7 +66,11 @@
 
 .works .container .row-two .box {
   padding: 15px;
-  width: 368px;
   height: 200px;
   background-color: #393e46ab;
+  width: 365px;
+}
+
+.works .container .row-two .box img {
+  width: 80%;
 }
